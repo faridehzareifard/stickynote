@@ -60,9 +60,20 @@
                     }
                     
                     .footer {
-                        background-color: aqua;
+                        background-color: rgb(178, 250, 250);
                         width: 100%;
                         height: 50px;
                         position: absolute;
-                        top: 92.5%;
+                        top: 94%;
+                    }
+                    
+                    .circle {
+                        width: 70px;
+                        height: 70px;
+                        background: rgb(114, 245, 245);
+                        border-radius: 50%;
+                        position: absolute;
+                        border: solid 6px white;
+                        left: 46%;
+                        bottom: 17px;
                     }
