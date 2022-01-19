@@ -1,255 +1,264 @@
-                    body,
-                    div {
-                        margin: 0;
-                        padding: 0;
-                        box-sizing: border-box;
-                        width: 100%;
-                        height: 84vh;
-                    }
-                    
-                    body {
-                        position: relative;
-                    }
-                    /* main-textareas */
-                    
-                    .main {
-                        padding-top: 5px;
-                        padding-left: 18px;
-                        display: flex;
-                        flex-wrap: wrap;
-                        position: relative;
-                        width: 1100px;
-                        height: 400px;
-                        margin: 100px auto;
-                        justify-content: center;
-                    }
-                    
-                    textarea {
-                        height: 150px;
-                        /* margin-top: 40px; */
-                        display: inline-flex;
-                        margin-left: 10px;
-                    }
-                    
-                    textarea:nth-child(1) {
-                        background-color: rgb(155, 248, 228);
-                        border: solid rgb(115, 241, 214);
-                    }
-                    
-                    textarea:nth-child(2) {
-                        background-color: rgb(252, 215, 191);
-                        border: solid rgb(247, 196, 163);
-                    }
-                    
-                    textarea:nth-child(3) {
-                        background-color: rgb(162, 234, 247);
-                        border: solid rgb(150, 232, 247);
-                    }
-                    
-                    textarea:nth-child(4) {
-                        background-color: rgb(253, 209, 223);
-                        border: solid rgb(250, 189, 208);
-                    }
-                    
-                    textarea:nth-child(5) {
-                        background-color: rgb(225, 248, 182);
-                        border: solid rgb(217, 245, 166);
-                    }
-                    
-                    textarea:nth-child(6) {
-                        background-color: rgb(233, 207, 250);
-                        border: solid rgb(227, 194, 247);
-                    }
-                    /* footer */
-                    
-                    .footer-main {
-                        width: 100%;
-                        height: 50px;
-                    }
-                    
-                    .footer {
-                        background-color: rgb(178, 250, 250);
-                        width: 100%;
-                        height: 50px;
-                        position: absolute;
-                        top: 94%;
-                    }
-                    /* دایره وسط فوتر */
-                    
-                    .circle {
-                        width: 70px;
-                        height: 70px;
-                        background: rgb(114, 245, 245);
-                        border-radius: 50%;
-                        position: absolute;
-                        border: solid 6px white;
-                        left: 49%;
-                        bottom: 17px;
-                    }
-                    
-                    #plus {
-                        font-size: 40px;
-                        color: rgb(97, 96, 96);
-                        margin-top: 10px;
-                        margin-right: 12px;
-                        ;
-                    }
-                    /* ستینگ درون فوتر */
-                    
-                    #setting {
-                        font-size: 35px;
-                        color: rgb(97, 96, 96);
-                        float: right;
-                        margin-right: 80px;
-                        margin-top: 9px;
-                    }
-                    
-                    .sub-setting>ul>li {
-                        list-style: none;
-                        padding-bottom: 20px;
-                        padding-top: 10px;
-                    }
-                    
-                    .sub-setting>ul>li:first-of-type {
-                        padding-top: 80px;
-                    }
-                    
-                    .sub-setting>ul>li>a {
-                        text-decoration: none;
-                        color: rgb(97, 96, 96);
-                        font-size: 30px;
-                    }
-                    
-                    .sub-setting {
-                        position: absolute;
-                        width: 300px;
-                        height: 700px;
-                        background-color: rgb(174, 250, 250);
-                        bottom: 50px;
-                        right: 0px;
-                        opacity: 0;
-                        visibility: hidden;
-                        transition: all .2s;
-                        transition-timing-function: ease-in-out;
-                    }
-                    
-                    #setting:hover>div {
-                        opacity: 1;
-                        visibility: visible;
-                    }
-                    /* مربع چپ فوتر */
-                    
-                    #square {
-                        font-size: 35px;
-                        color: rgb(97, 96, 96);
-                        float: left;
-                        margin-left: 80px;
-                        margin-top: 9px;
-                    }
-                    
-                    .subsquare {
-                        width: 300px;
-                        height: 700px;
-                        background-color: rgb(174, 250, 250);
-                        position: absolute;
-                        bottom: 50px;
-                        left: 0px;
-                        opacity: 0;
-                        visibility: hidden;
-                        transition: all .2s;
-                        transition-timing-function: ease-in-out;
-                    }
-                    
-                    .subsquare>ul>li {
-                        list-style: none;
-                        padding-bottom: 20px;
-                        padding-top: 10px;
-                    }
-                    
-                    .subsquare>ul>li:first-of-type {
-                        padding-top: 80px;
-                    }
-                    
-                    .subsquare>ul>li>a {
-                        text-decoration: none;
-                        color: rgb(97, 96, 96);
-                        font-size: 30px;
-                    }
-                    
-                    #square:hover>div {
-                        visibility: visible;
-                        opacity: 1;
-                    }
-                    /* payane safeye index */
-                    /* ----------------------------------- */
-                    /* start plus page */
-                    /* header-plus page */
-                    
-                    .header {
-                        margin-top: 30px;
-                        width: 100%;
-                        height: 80px;
-                        display: inline-block;
-                    }
-                    
-                    #back-button {
-                        width: 40px;
-                        height: 60px;
-                        margin-left: 50px;
-                        padding-top: 20px;
-                        float: left;
-                    }
-                    
-                    #back-button>a {
-                        color: rgb(97, 96, 96);
-                        width: 40px;
-                        height: 60px;
-                    }
-                    
-                    #back-button>a>i {
-                        font-size: 50px;
-                        width: 40px;
-                        height: 60px;
-                    }
-                    
-                    .title {
-                        width: 50%;
-                        height: 80px;
-                        margin-right: 500px;
-                    }
-                    
-                    .title>input {
-                        width: 70%;
-                        height: 80px;
-                        margin: 0;
-                        padding: 0;
-                        border: 0px;
-                        border-bottom: 3px solid rgb(97, 96, 96);
-                        background-color: rgb(216, 247, 247);
-                        border-radius: 10px;
-                    }
-                    /* payane  header plus page */
-                    /* start main plus page */
-                    
-                    .main-plus {
-                        width: 80%;
-                        height: 400px;
-                        margin: 0 auto;
-                        margin-top: 30px;
-                        text-align: center;
-                    }
-                    
-                    .main-plus>textarea {
-                        width: 80%;
-                        height: 100%;
-                        background-color: rgb(234, 255, 255);
-                    }
-                    /* payane main plus page */
-                    
-                    .footer-pluspage {
-                        background-color: aqua;
-                        width: 100%;
-                        height: 50px;
-                        position: absolute;
-                        bottom: -118px;
-                    }
+                  @font-face {
+                      font-family: "iransans";
+                      src: url("/folder/font/IRANSansXFaNum-Regular.woff");
+                  }
+                  
+                  * {
+                      font-family: iransans;
+                  }
+                  
+                  body,
+                  div {
+                      margin: 0;
+                      padding: 0;
+                      box-sizing: border-box;
+                      width: 100%;
+                      height: 84vh;
+                  }
+                  
+                  body {
+                      position: relative;
+                  }
+                  /* main-textareas */
+                  
+                  .main {
+                      padding-top: 5px;
+                      padding-left: 18px;
+                      display: flex;
+                      flex-wrap: wrap;
+                      position: relative;
+                      width: 1100px;
+                      height: 400px;
+                      margin: 100px auto;
+                      justify-content: center;
+                  }
+                  
+                  textarea {
+                      height: 150px;
+                      /* margin-top: 40px; */
+                      display: inline-flex;
+                      margin-left: 10px;
+                  }
+                  
+                  textarea:nth-child(1) {
+                      background-color: rgb(155, 248, 228);
+                      border: solid rgb(115, 241, 214);
+                  }
+                  
+                  textarea:nth-child(2) {
+                      background-color: rgb(252, 215, 191);
+                      border: solid rgb(247, 196, 163);
+                  }
+                  
+                  textarea:nth-child(3) {
+                      background-color: rgb(162, 234, 247);
+                      border: solid rgb(150, 232, 247);
+                  }
+                  
+                  textarea:nth-child(4) {
+                      background-color: rgb(253, 209, 223);
+                      border: solid rgb(250, 189, 208);
+                  }
+                  
+                  textarea:nth-child(5) {
+                      background-color: rgb(225, 248, 182);
+                      border: solid rgb(217, 245, 166);
+                  }
+                  
+                  textarea:nth-child(6) {
+                      background-color: rgb(233, 207, 250);
+                      border: solid rgb(227, 194, 247);
+                  }
+                  /* footer */
+                  
+                  .footer-main {
+                      width: 100%;
+                      height: 50px;
+                  }
+                  
+                  .footer {
+                      background-color: rgb(178, 250, 250);
+                      width: 100%;
+                      height: 50px;
+                      position: absolute;
+                      top: 94%;
+                  }
+                  /* دایره وسط فوتر */
+                  
+                  .circle {
+                      width: 70px;
+                      height: 70px;
+                      background: rgb(114, 245, 245);
+                      border-radius: 50%;
+                      position: absolute;
+                      border: solid 6px white;
+                      left: 49%;
+                      bottom: 17px;
+                  }
+                  
+                  #plus {
+                      font-size: 40px;
+                      color: rgb(97, 96, 96);
+                      margin-top: 10px;
+                      margin-right: 12px;
+                      ;
+                  }
+                  /* ستینگ درون فوتر */
+                  
+                  #setting {
+                      font-size: 35px;
+                      color: rgb(97, 96, 96);
+                      float: right;
+                      margin-right: 80px;
+                      margin-top: 9px;
+                  }
+                  
+                  .sub-setting>ul>li {
+                      list-style: none;
+                      padding-bottom: 20px;
+                      padding-top: 10px;
+                  }
+                  
+                  .sub-setting>ul>li:first-of-type {
+                      padding-top: 80px;
+                  }
+                  
+                  .sub-setting>ul>li>a {
+                      text-decoration: none;
+                      color: rgb(97, 96, 96);
+                      font-size: 30px;
+                  }
+                  
+                  .sub-setting {
+                      position: absolute;
+                      width: 300px;
+                      height: 700px;
+                      background-color: rgb(174, 250, 250);
+                      bottom: 50px;
+                      right: 0px;
+                      opacity: 0;
+                      visibility: hidden;
+                      transition: all .2s;
+                      transition-timing-function: ease-in-out;
+                  }
+                  
+                  #setting:hover>div {
+                      opacity: 1;
+                      visibility: visible;
+                  }
+                  /* مربع چپ فوتر */
+                  
+                  #square {
+                      font-size: 35px;
+                      color: rgb(97, 96, 96);
+                      float: left;
+                      margin-left: 80px;
+                      margin-top: 9px;
+                  }
+                  
+                  .subsquare {
+                      width: 300px;
+                      height: 700px;
+                      background-color: rgb(174, 250, 250);
+                      position: absolute;
+                      bottom: 50px;
+                      left: 0px;
+                      opacity: 0;
+                      visibility: hidden;
+                      transition: all .2s;
+                      transition-timing-function: ease-in-out;
+                  }
+                  
+                  .subsquare>ul>li {
+                      list-style: none;
+                      padding-bottom: 20px;
+                      padding-top: 10px;
+                  }
+                  
+                  .subsquare>ul>li:first-of-type {
+                      padding-top: 80px;
+                  }
+                  
+                  .subsquare>ul>li>a {
+                      text-decoration: none;
+                      color: rgb(97, 96, 96);
+                      font-size: 30px;
+                  }
+                  
+                  #square:hover>div {
+                      visibility: visible;
+                      opacity: 1;
+                  }
+                  /* payane safeye index */
+                  /* ----------------------------------- */
+                  /* start plus page */
+                  /* header-plus page */
+                  
+                  .header {
+                      margin-top: 30px;
+                      width: 100%;
+                      height: 80px;
+                      display: inline-block;
+                  }
+                  
+                  #back-button {
+                      width: 40px;
+                      height: 60px;
+                      margin-left: 50px;
+                      padding-top: 20px;
+                      float: left;
+                  }
+                  
+                  #back-button>a {
+                      color: rgb(97, 96, 96);
+                      width: 40px;
+                      height: 60px;
+                  }
+                  
+                  #back-button>a>i {
+                      font-size: 50px;
+                      width: 40px;
+                      height: 60px;
+                  }
+                  
+                  .title {
+                      width: 50%;
+                      height: 80px;
+                      margin-right: 500px;
+                  }
+                  
+                  .title>input {
+                      width: 70%;
+                      height: 80px;
+                      margin: 0;
+                      padding: 0;
+                      border: 0px;
+                      border-bottom: 3px solid rgb(97, 96, 96);
+                      background-color: rgb(216, 247, 247);
+                      border-radius: 10px;
+                  }
+                  /* payane  header plus page */
+                  /* start main plus page */
+                  
+                  .main-plus {
+                      width: 80%;
+                      height: 400px;
+                      margin: 0 auto;
+                      margin-top: 30px;
+                      text-align: center;
+                  }
+                  
+                  .main-plus>textarea {
+                      width: 80%;
+                      height: 100%;
+                      background-color: rgb(234, 255, 255);
+                  }
+                  /* payane main plus page */
+                  
+                  .footer-pluspage {
+                      background-color: aqua;
+                      width: 100%;
+                      height: 50px;
+                      position: absolute;
+                      bottom: -118px;
+                  }
