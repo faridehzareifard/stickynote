@@ -19,6 +19,11 @@
                   body {
                       position: relative;
                   }
+                  
+                  #plus-page {
+                      position: absolute;
+                      bottom: 5000px;
+                  }
                   /* main-textareas */
                   
                   .main {
@@ -37,7 +42,9 @@
                       height: 150px;
                       /* margin-top: 40px; */
                       display: inline-flex;
-                      margin-left: 10px;
+                      margin-left: 30px;
+                      border-radius: 15px;
+                      box-shadow: 0 0 10px 1px rgb(221, 218, 218)
                   }
                   
                   textarea:nth-child(1) {
@@ -82,6 +89,7 @@
                       height: 50px;
                       position: absolute;
                       top: 94%;
+                      box-shadow: 0 0 3px 1px rgb(221, 218, 218)
                   }
                   /* دایره وسط فوتر */
                   
@@ -94,6 +102,7 @@
                       border: solid 6px white;
                       left: 49%;
                       bottom: 17px;
+                      box-shadow: 0 0 1px 1px rgb(221, 218, 218)
                   }
                   
                   #plus {
@@ -101,7 +110,6 @@
                       color: rgb(97, 96, 96);
                       margin-top: 10px;
                       margin-right: 12px;
-                      ;
                   }
                   /* ستینگ درون فوتر */
                   
@@ -115,25 +123,25 @@
                   
                   .sub-setting>ul>li {
                       list-style: none;
-                      padding-bottom: 20px;
-                      padding-top: 10px;
+                      padding-bottom: 15px;
+                      padding-top: 8px;
                   }
                   
                   .sub-setting>ul>li:first-of-type {
-                      padding-top: 80px;
+                      padding-top: 120px;
                   }
                   
                   .sub-setting>ul>li>a {
                       text-decoration: none;
-                      color: rgb(97, 96, 96);
-                      font-size: 30px;
+                      color: white;
+                      font-size: 18px;
                   }
                   
                   .sub-setting {
                       position: absolute;
-                      width: 300px;
+                      width: 200px;
                       height: 700px;
-                      background-color: rgb(174, 250, 250);
+                      background-color: rgb(64, 134, 134);
                       bottom: 50px;
                       right: 0px;
                       opacity: 0;
@@ -157,9 +165,9 @@
                   }
                   
                   .subsquare {
-                      width: 300px;
+                      width: 200px;
                       height: 700px;
-                      background-color: rgb(174, 250, 250);
+                      background-color: rgb(64, 134, 134);
                       position: absolute;
                       bottom: 50px;
                       left: 0px;
@@ -176,13 +184,13 @@
                   }
                   
                   .subsquare>ul>li:first-of-type {
-                      padding-top: 80px;
+                      padding-top: 120px;
                   }
                   
                   .subsquare>ul>li>a {
                       text-decoration: none;
-                      color: rgb(97, 96, 96);
-                      font-size: 30px;
+                      color: white;
+                      font-size: 18px;
                   }
                   
                   #square:hover>div {
@@ -194,32 +202,55 @@
                   /* start plus page */
                   /* header-plus page */
                   
+                  .plus-page-style {
+                      position: absolute;
+                      top: -100px;
+                      left: 28%;
+                      z-index: 99;
+                      width: 700px;
+                      height: 500px;
+                      background-color: rgba(128, 128, 128, 0.548);
+                      box-shadow: 0 0 10px 20px rgba(128, 128, 128, 0.548);
+                      border-radius: 30px;
+                      margin-top: 50px;
+                      transition: all 0.7s;
+                  }
+                  
+                  .hidden {
+                      visibility: hidden;
+                      opacity: 0;
+                  }
+                  
+                  .show {
+                      visibility: visible;
+                      opacity: 1;
+                  }
+                  
                   .header {
                       margin-top: 30px;
-                      width: 100%;
+                      width: 80%;
                       height: 80px;
                       display: flex;
                       direction: ltr;
-                      justify-content: space-around;
+                      justify-content: center;
                   }
                   
                   #back-button {
                       width: 40px;
                       height: 60px;
-                      margin-left: 50px;
                       padding-top: 20px;
                       float: left;
                       display: inline-flex;
                   }
                   
                   #back-button>a {
-                      color: rgb(97, 96, 96);
+                      color: rgb(255, 255, 255);
                       width: 40px;
                       height: 60px;
                   }
                   
                   #back-button>a>i {
-                      font-size: 50px;
+                      font-size: 40px;
                       width: 40px;
                       height: 60px;
                   }
@@ -247,14 +278,15 @@
                       display: inline-flex;
                       width: auto;
                       height: 70px;
-                      font-size: 30px;
+                      font-size: 20px;
                       /* vertical-align: bottom; */
                       font-weight: bold;
-                      padding-top: 15px;
+                      padding-top: 20px;
+                      margin-right: 80px;
                   }
                   
                   .done>a {
-                      color: rgb(97, 96, 96);
+                      color: rgb(255, 255, 255);
                       text-decoration: none;
                   }
                   /* payane  header plus page */
@@ -270,7 +302,7 @@
                   
                   .main-plus>textarea {
                       width: 80%;
-                      height: 100%;
+                      height: 70%;
                       background-color: rgb(234, 255, 255);
                   }
                   /* payane main plus page */
@@ -293,7 +325,7 @@
                       width: 100%;
                       height: 50px;
                       position: absolute;
-                      bottom: -118px;
+                      bottom: 0px;
                       display: flex;
                       align-items: center;
                       justify-content: center;

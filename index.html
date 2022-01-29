@@ -12,6 +12,45 @@
 </head>
 
 <body>
+
+    <div id="plus-page" class="plus-page-style hidden">
+        <!--header-->
+        <div class="header">
+            <!--back-->
+            <div id="back-button" onclick="changetohide()"> <a href="index.html"><i class="fas fa-less-than" ></i></a></div>
+            <!--title-->
+            <div class="title">
+                <input type="text" name="text" placeholder="عنوان را اینجا بنویسید">
+            </div>
+            <div class="done" id="donebutton" onclick="changetohide()"><a href="#"> ذخیره</a></div>
+        </div>
+        <!--main-->
+        <div class="main-plus">
+            <textarea id="plustext" name="plustext"></textarea>
+        </div>
+        <!--footer-->
+
+        <footer class="mainfooter">
+            <a href="#"> <i class="fab fa-fonticons" id="fonticons-pluspage">
+        </i>
+            </a>
+            <a href="#"><i class="fas fa-trash-alt" id="trash-pluspage"></i></a>
+            <a href="#"> <i class="far fa-copy" id="copy-pluspage"></i></a>
+            <a href="#"> <i class="far fa-save" id="save-pluspage"></i></a>
+            <a href="#"><i class="fas fa-thumbtack" id="pin-pluspage"></i></a>
+
+
+        </footer>
+        <div class="fonticonsfooter">
+            <i class="fas fa-align-right" id="alignRight"></i>
+            <i class="fas fa-align-left" id="alignLeft"></i>
+            <i class="fas fa-bold" id="bold"></i>
+            <i class="fas fa-italic" id="italic"></i>
+            <i class="fas fa-undo"></i> </div>
+
+
+    </div>
+
     <div class="main">
         <!--قسمت اصلی یادداشتها-->
 
@@ -30,9 +69,10 @@
         <footer class="footer">
             <!--دایره وسط فوتر-->
 
-            <a href="plus.html">
+            <a href="#" id="click" onclick="changetoshow()">
                 <div class="circle"><i id="plus" class="fas fa-plus"></i></div>
             </a>
+
 
 
             <i class="fas fa-cog" id="setting"><!--دکمه ستینگ-->
