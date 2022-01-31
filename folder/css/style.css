@@ -7,6 +7,10 @@
                       font-family: iransans;
                   }
                   
+                  i:hover {
+                      cursor: pointer;
+                  }
+                  
                   body,
                   div {
                       margin: 0;
@@ -214,6 +218,7 @@
                       border-radius: 30px;
                       margin-top: 50px;
                       transition: all 0.7s;
+                      position: relative;
                   }
                   
                   .hidden {
@@ -289,6 +294,11 @@
                       color: rgb(255, 255, 255);
                       text-decoration: none;
                   }
+                  
+                  .plus-page-style>div:last-of-type {
+                      position: absolute;
+                      bottom: 0px;
+                  }
                   /* payane  header plus page */
                   /* start main plus page */
                   
@@ -307,14 +317,10 @@
                   }
                   /* payane main plus page */
                   
-                  .mainfooter>a>i {
+                  .mainfooter>i {
                       display: inline-flex;
                       margin: 0 20px 0 20px;
-                      font-size: 30px;
-                  }
-                  
-                  .mainfooter>a {
-                      text-decoration: none;
+                      font-size: 20px;
                       color: rgb(97, 96, 96);
                   }
                   
@@ -334,9 +340,17 @@
                   /* payane mainfooter plus page */
                   /* start footer font icons */
                   
-                  .fonticonsfooter {
+                  .hidefonticon {
                       visibility: hidden;
                       opacity: 0;
+                  }
+                  
+                  .showfonticon {
+                      visibility: visible;
+                      opacity: 1;
+                  }
+                  
+                  .fonticonsfooter {
                       background-color: rgb(178, 250, 250);
                       width: 100%;
                       height: 50px;
@@ -351,7 +365,7 @@
                   .fonticonsfooter>i {
                       display: inline-flex;
                       margin: 0 20px 0 20px;
-                      font-size: 30px;
+                      font-size: 20px;
                       color: rgb(97, 96, 96)
                   }
                   /* payan footer font icons */

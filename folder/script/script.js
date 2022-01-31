@@ -13,3 +13,14 @@ function changetohide() {
     pluspage.classList.remove("show")
 
 }
+
+function showfonticon() {
+    let fonticon = document.getElementById("fonticon");
+    fonticon.classList.add("showfonticon");
+
+}
+
+function hidefonticon() {
+    let fonticon = document.getElementById("fonticon");
+    fonticon.classList.remove("showfonticon");
+}
