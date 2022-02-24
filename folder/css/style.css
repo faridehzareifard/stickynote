@@ -1,372 +1,398 @@
-                  @font-face {
-                      font-family: "iransans";
-                      src: url("/folder/font/IRANSansXFaNum-Regular.woff");
-                  }
-                  
-                  * {
-                      font-family: iransans;
-                  }
-                  
-                  i:hover {
-                      cursor: pointer;
-                  }
-                  
-                  body,
-                  div {
-                      margin: 0;
-                      padding: 0;
-                      box-sizing: border-box;
-                      width: 100%;
-                      height: 570px;
-                  }
-                  
-                  body {
-                      position: relative;
-                  }
-                  
-                  #plus-page {
-                      position: absolute;
-                      bottom: 5000px;
-                  }
-                  /* main-textareas */
-                  
-                  .main {
-                      padding-top: 5px;
-                      padding-left: 18px;
-                      display: flex;
-                      flex-wrap: wrap;
-                      position: relative;
-                      width: 1100px;
-                      height: 400px;
-                      margin: 133px auto;
-                      justify-content: center;
-                  }
-                  
-                  textarea {
-                      height: 150px;
-                      /* margin-top: 40px; */
-                      display: inline-flex;
-                      margin-left: 30px;
-                      border-radius: 15px;
-                      box-shadow: 0 0 10px 1px rgb(221, 218, 218)
-                  }
-                  
-                  textarea:nth-child(1) {
-                      background-color: rgb(155, 248, 228);
-                      border: solid rgb(115, 241, 214);
-                  }
-                  
-                  textarea:nth-child(2) {
-                      background-color: rgb(252, 215, 191);
-                      border: solid rgb(247, 196, 163);
-                  }
-                  
-                  textarea:nth-child(3) {
-                      background-color: rgb(162, 234, 247);
-                      border: solid rgb(150, 232, 247);
-                  }
-                  
-                  textarea:nth-child(4) {
-                      background-color: rgb(253, 209, 223);
-                      border: solid rgb(250, 189, 208);
-                  }
-                  
-                  textarea:nth-child(5) {
-                      background-color: rgb(225, 248, 182);
-                      border: solid rgb(217, 245, 166);
-                  }
-                  
-                  textarea:nth-child(6) {
-                      background-color: rgb(233, 207, 250);
-                      border: solid rgb(227, 194, 247);
-                  }
-                  /* footer */
-                  
-                  .footer-main {
-                      width: 100%;
-                      height: 50px;
-                  }
-                  
-                  .footer {
-                      background-color: rgb(178, 250, 250);
-                      width: 100%;
-                      height: 50px;
-                      position: absolute;
-                      top: 94%;
-                      box-shadow: 0 0 3px 1px rgb(221, 218, 218)
-                  }
-                  /* دایره وسط فوتر */
-                  
-                  .circle {
-                      width: 70px;
-                      height: 70px;
-                      background: rgb(114, 245, 245);
-                      border-radius: 50%;
-                      position: absolute;
-                      border: solid 6px white;
-                      left: 49%;
-                      bottom: 17px;
-                      box-shadow: 0 0 1px 1px rgb(221, 218, 218)
-                  }
-                  
-                  #plus {
-                      font-size: 40px;
-                      color: rgb(97, 96, 96);
-                      margin-top: 10px;
-                      margin-right: 12px;
-                  }
-                  /* ستینگ درون فوتر */
-                  
-                  #setting {
-                      font-size: 35px;
-                      color: rgb(97, 96, 96);
-                      float: right;
-                      margin-right: 80px;
-                      margin-top: 9px;
-                  }
-                  
-                  .sub-setting>ul>li {
-                      list-style: none;
-                      padding-bottom: 15px;
-                      padding-top: 8px;
-                  }
-                  
-                  .sub-setting>ul>li:first-of-type {
-                      padding-top: 120px;
-                  }
-                  
-                  .sub-setting>ul>li>a {
-                      text-decoration: none;
-                      color: white;
-                      font-size: 18px;
-                  }
-                  
-                  .sub-setting {
-                      position: absolute;
-                      width: 200px;
-                      height: 700px;
-                      background-color: rgb(64, 134, 134);
-                      bottom: 50px;
-                      right: 0px;
-                      opacity: 0;
-                      visibility: hidden;
-                      transition: all .2s;
-                      transition-timing-function: ease-in-out;
-                  }
-                  
-                  #setting:hover>div {
-                      opacity: 1;
-                      visibility: visible;
-                  }
-                  /* مربع چپ فوتر */
-                  
-                  #square {
-                      font-size: 35px;
-                      color: rgb(97, 96, 96);
-                      float: left;
-                      margin-left: 80px;
-                      margin-top: 9px;
-                  }
-                  
-                  .subsquare {
-                      width: 200px;
-                      height: 700px;
-                      background-color: rgb(64, 134, 134);
-                      position: absolute;
-                      bottom: 50px;
-                      left: 0px;
-                      opacity: 0;
-                      visibility: hidden;
-                      transition: all .2s;
-                      transition-timing-function: ease-in-out;
-                  }
-                  
-                  .subsquare>ul>li {
-                      list-style: none;
-                      padding-bottom: 20px;
-                      padding-top: 10px;
-                  }
-                  
-                  .subsquare>ul>li:first-of-type {
-                      padding-top: 120px;
-                  }
-                  
-                  .subsquare>ul>li>a {
-                      text-decoration: none;
-                      color: white;
-                      font-size: 18px;
-                  }
-                  
-                  #square:hover>div {
-                      visibility: visible;
-                      opacity: 1;
-                  }
-                  /* payane safeye index */
-                  /* ----------------------------------- */
-                  /* start plus page */
-                  /* header-plus page */
-                  
-                  .plus-page-style {
-                      position: absolute;
-                      top: -100px;
-                      left: 28%;
-                      z-index: 99;
-                      width: 700px;
-                      height: 500px;
-                      background-color: rgba(128, 128, 128, 0.548);
-                      box-shadow: 0 0 10px 20px rgba(128, 128, 128, 0.548);
-                      border-radius: 30px;
-                      margin-top: 50px;
-                      transition: all 0.7s;
-                      position: relative;
-                  }
-                  
-                  .hidden {
-                      visibility: hidden;
-                      opacity: 0;
-                  }
-                  
-                  .show {
-                      visibility: visible;
-                      opacity: 1;
-                  }
-                  
-                  .header {
-                      margin-top: 30px;
-                      width: 80%;
-                      height: 80px;
-                      display: flex;
-                      direction: ltr;
-                      justify-content: center;
-                  }
-                  
-                  #back-button {
-                      width: 40px;
-                      height: 60px;
-                      padding-top: 20px;
-                      float: left;
-                      display: inline-flex;
-                  }
-                  
-                  #back-button>a {
-                      color: rgb(255, 255, 255);
-                      width: 40px;
-                      height: 60px;
-                  }
-                  
-                  #back-button>a>i {
-                      font-size: 40px;
-                      width: 40px;
-                      height: 60px;
-                  }
-                  
-                  .title {
-                      width: 600px;
-                      height: 80px;
-                      display: inline-flex;
-                  }
-                  
-                  .title>input {
-                      width: 70%;
-                      height: 80px;
-                      margin: 0 0 0 60px;
-                      padding: 0;
-                      border: 0px;
-                      border-bottom: 3px solid rgb(97, 96, 96);
-                      background-color: rgb(216, 247, 247);
-                      border-radius: 10px;
-                      text-align: right;
-                      justify-content: center;
-                  }
-                  
-                  .done {
-                      display: inline-flex;
-                      width: auto;
-                      height: 70px;
-                      font-size: 20px;
-                      /* vertical-align: bottom; */
-                      font-weight: bold;
-                      padding-top: 20px;
-                      margin-right: 80px;
-                  }
-                  
-                  .done>a {
-                      color: rgb(255, 255, 255);
-                      text-decoration: none;
-                  }
-                  
-                  .plus-page-style>div:last-of-type {
-                      position: absolute;
-                      bottom: 0px;
-                  }
-                  /* payane  header plus page */
-                  /* start main plus page */
-                  
-                  .main-plus {
-                      width: 80%;
-                      height: 400px;
-                      margin: 0 auto;
-                      margin-top: 30px;
-                      text-align: center;
-                  }
-                  
-                  .main-plus>textarea {
-                      width: 80%;
-                      height: 70%;
-                      background-color: rgb(234, 255, 255);
-                  }
-                  /* payane main plus page */
-                  
-                  .mainfooter>i {
-                      display: inline-flex;
-                      margin: 0 20px 0 20px;
-                      font-size: 20px;
-                      color: rgb(97, 96, 96);
-                  }
-                  
-                  .mainfooter {
-                      visibility: visible;
-                      opacity: 1;
-                      background-color: rgb(178, 250, 250);
-                      width: 100%;
-                      height: 50px;
-                      position: absolute;
-                      bottom: 0px;
-                      display: flex;
-                      align-items: center;
-                      justify-content: center;
-                      text-align: center;
-                  }
-                  /* payane mainfooter plus page */
-                  /* start footer font icons */
-                  
-                  .hidefonticon {
-                      visibility: hidden;
-                      opacity: 0;
-                  }
-                  
-                  .showfonticon {
-                      visibility: visible;
-                      opacity: 1;
-                  }
-                  
-                  .fonticonsfooter {
-                      background-color: rgb(178, 250, 250);
-                      width: 100%;
-                      height: 50px;
-                      position: absolute;
-                      bottom: -118px;
-                      display: flex;
-                      align-items: center;
-                      justify-content: center;
-                      text-align: center;
-                  }
-                  
-                  .fonticonsfooter>i {
-                      display: inline-flex;
-                      margin: 0 20px 0 20px;
-                      font-size: 20px;
-                      color: rgb(97, 96, 96)
-                  }
-                  /* payan footer font icons */
-                  /* hover */
+@font-face {
+    font-family: "iransans";
+    src: url("/folder/font/IRANSansXFaNum-Regular.woff");
+}
+
+* {
+    font-family: iransans;
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+body,
+div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*show and hide*/
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*classes for js edit text*/
+
+.alignToRight {
+    text-align: right;
+}
+
+.alignToLeft {
+    text-align: left;
+}
+
+.fontWeight {
+    font-weight: bolder;
+}
+
+.fontStyle {
+    font-style: italic;
+}
+
+
+/*change theme*/
+
+.bgColorToGray {
+    background-color: rgb(231, 231, 231);
+}
+
+
+/*logo*/
+
+#logo>img {
+    width: 100%;
+    height: 100%;
+}
+
+#logo {
+    width: 25%;
+    height: 5%;
+    margin: 30px auto 0;
+}
+
+
+/*end logo*/
+
+
+/*---------------------------------------------------------------------*/
+
+
+/*plus page*/
+
+.plusPageStyle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 50%;
+    right: 31%;
+    width: 40%;
+    height: 70vh;
+    z-index: 99;
+    background-color: rgba(128, 128, 128, 0.548);
+    box-shadow: 0 0 10px 20px rgba(128, 128, 128, 0.548);
+    border-radius: 30px;
+    transition: all 0.7s;
+    position: relative;
+}
+
+
+/*plus text area*/
+
+#plustext {
+    display: inline-flex;
+    width: 80%;
+    height: 50%;
+    background-color: rgb(234, 255, 255);
+    margin-bottom: 60px;
+}
+
+
+/*plus header*/
+
+.header {
+    width: 85%;
+    height: 20%;
+    display: flex;
+    direction: ltr;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+#back-button {
+    width: 40px;
+    height: 60px;
+    float: left;
+    display: inline-flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+}
+
+#title {
+    display: inline-flex;
+    width: 70%;
+    height: 80%;
+    padding: 0;
+    border: 0px;
+    border-bottom: 3px solid rgb(97, 96, 96);
+    background-color: rgb(216, 247, 247);
+    border-radius: 10px;
+    text-align: right;
+}
+
+#donebutton {
+    display: inline-flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+
+/* payane  header plus page */
+
+
+/*footer plus page*/
+
+.mainfooter>i {
+    display: inline-flex;
+    margin: 0 20px 0 20px;
+    font-size: 20px;
+    color: rgb(97, 96, 96);
+}
+
+.mainfooter {
+    background-color: rgb(178, 250, 250);
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* payane mainfooter plus page */
+
+
+/* payane main plus page */
+
+
+/* footer */
+
+#footer {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 94%;
+    box-shadow: 0 0 3px 1px rgb(221, 218, 218);
+}
+
+.footerColor {
+    background-color: rgb(178, 250, 250);
+}
+
+.footerColorBorder {
+    border-top: solid 2px rgb(178, 250, 250);
+}
+
+
+/* دایره وسط فوتر */
+
+#circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    border: solid 6px white;
+    left: 47%;
+    bottom: 17px;
+    box-shadow: 0 0 1px 1px rgb(221, 218, 218);
+}
+
+#plus {
+    font-size: 40px;
+    color: rgb(97, 96, 96);
+    margin-top: 10px;
+    margin-right: 12px;
+}
+
+.plusRotate {
+    transform: rotate(90deg);
+    transition: all 0.5s;
+}
+
+
+/* ستینگ درون فوتر */
+
+#setting {
+    font-size: 35px;
+    color: rgb(97, 96, 96);
+    float: right;
+    margin-right: 80px;
+    margin-top: 9px;
+}
+
+#sub-setting>ul>li {
+    list-style: none;
+    padding-bottom: 15px;
+    padding-top: 8px;
+    color: white;
+}
+
+#sub-setting>ul>li:first-of-type {
+    padding-top: 150px;
+}
+
+#sub-setting>ul>li>a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+#sub-setting {
+    position: absolute;
+    width: 200px;
+    height: 700px;
+    background-color: rgb(64, 134, 134);
+    bottom: 50px;
+    right: 0px;
+    transition: all 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+
+/*subAbout*/
+
+#subAbout {
+    height: 20vh;
+    width: 10vw;
+    position: absolute;
+    bottom: 55px;
+    right: 20px;
+    background-color: white;
+    color: rgb(64, 134, 134);
+    line-height: 35px;
+    padding-top: 20px;
+    padding-right: 5px;
+}
+
+#closeAbout {
+    font-size: 25px;
+    color: red;
+}
+
+
+/* مربع چپ فوتر */
+
+#square {
+    font-size: 35px;
+    color: rgb(97, 96, 96);
+    float: left;
+    margin-left: 80px;
+    margin-top: 9px;
+}
+
+#subSquare {
+    width: 200px;
+    height: 700px;
+    background-color: rgb(64, 134, 134);
+    position: absolute;
+    bottom: 50px;
+    left: 0px;
+    transition: all 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+#subSquare>ul>li {
+    list-style: none;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+#subSquare>ul>li:first-of-type {
+    padding-top: 120px;
+}
+
+#subSquare>ul>li>a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+
+/* payane safeye index */
+
+
+/* ----------------------------------- */
+
+
+/*mainnote style*/
+
+.mainNote {
+    padding-top: 5px;
+    padding-left: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 80vw;
+    height: 100%;
+    margin: 100px auto;
+    justify-content: center;
+}
+
+.mainNote>textarea {
+    height: 150px;
+    display: inline-flex;
+    margin-left: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 1px rgb(221, 218, 218);
+    background-color: rgb(248, 248, 238);
+    margin-top: 10px;
+}
+
+.mainNote>textarea:nth-child(1) {
+    border: solid rgb(167, 100, 243);
+}
+
+.mainNote>textarea:nth-child(2) {
+    border: solid rgb(235, 104, 196);
+}
+
+.mainNote>textarea:nth-child(3) {
+    border: solid rgb(112, 195, 233);
+}
+
+.mainNote>textarea:nth-child(4) {
+    border: solid rgb(114, 240, 114);
+}
+
+.mainNote>textarea:nth-child(5) {
+    border: solid rgb(194, 240, 110);
+}
+
+.mainNote>textarea:nth-child(6) {
+    border: solid rgb(226, 132, 109);
+}
+
+.mainNote>textarea:nth-child(7) {
+    border: solid rgb(220, 192, 252);
+}
+
+.mainNote>textarea:nth-child(8) {
+    border: solid rgb(252, 192, 242);
+}
+
+.mainNote>textarea:nth-child(9) {
+    border: solid rgb(252, 192, 192);
+}
